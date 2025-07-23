@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH1z4+X2kcGZsv5b8B+/YkQKPoRQgxl6RLUbOj1uH6MLv2C7eHYR0Nq0L0uP5Tw2Ba/Jyvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0f1f2b;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #0f1f2b;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 20px auto;
+      box-shadow: 0 0 20px #03fcf8;
+      transition: transform 0.3s;
+      
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      background-color: #0f1f2b;
+    }
+
+    nav a {
+      color: #03fcf8;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #03fcf8;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .skill, .project {
+      background-color: #122836;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill:hover, .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #03fcf8;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #0f1f2b;
+      background-color: #03fcf8;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: white;
+      color: #0f1f2b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0f1f2b;
+    }
+
+    .social-icons a {
+      color: #03fcf8;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="kasi pic.jpg" alt="Profile Photo" class="photo" />
+    <h1>Anisetti Kasi visalakshmi</h1>
+    <p>Full Stack Developer | Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer with experience in creating responsive, modern web applications. I love bringing designs to life and constantly learning new technologies.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Generative AI</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Deep Learning</div>
+        <div class="skill">Natural Language Processing</div>
+        <div class="skill">Google Cloud Fundamentals</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      
+      
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project One</h3>
+        <p>Brief description of your first project. What tech stack was used, and what it does.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>Brief description of your second project. What problem it solves or its features.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Connect with me:</p>
+    <!-- <div class="social-icons"> -->
+      <a href="https://www.linkedin.com/in/anisetti-rajya-lakshmi-7a36b42a1" target="_blank"><i class="fab fa-linkedin">Linke In</i></a>
+    <!-- </div> -->
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
